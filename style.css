@@ -1,0 +1,149 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-screen background with radial gradient */
+body {
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  background-image: radial-gradient(ellipse, #385300, #212900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Remove default button styling */
+button {
+  all: unset;
+}
+/* Main counter container - lime green background with shadow and flex layout */
+.counter {
+  background-color: #bef227;
+  width: 476px;
+  height: 615px;
+  border-radius: 12px;
+  box-shadow: 0px 25px 121px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.4s;
+}
+
+/* Darker shade when counter reaches max limit */
+.counter.max-reached {
+  background-color: #9ac916;
+}
+/* Large counter display number - 200px font size */
+.counter__value {
+  color: #1d2507;
+  font-size: 200px;
+  font-weight: 600px;
+  margin-top: 10px;
+}
+/* Counter title styling - uppercase with reduced opacity */
+.counter__title {
+  opacity: 0.6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 200px;
+  text-align: center;
+  line-height: 0.9;
+  font-weight: 500;
+  font-size: 32px;
+  margin-top: 60px;
+}
+
+/* Message text that appears when max limit is reached */
+.counter__message {
+  font-size: 14px;
+  color: #1d2507;
+  opacity: 0;
+  margin-top: 5px;
+  min-height: 20px;
+  transition: opacity 0.4s;
+}
+
+/* Show message by increasing opacity */
+.counter__message.show {
+  opacity: 0.8;
+}
+/* Reset button styling */
+.counter__reset-button {
+  cursor: pointer;
+}
+
+/* Reset icon - rotate icon with fade-in on hover */
+.counter__reset-icon {
+  opacity: 0.3;
+  font-size: 35px;
+  transition: all 0.4s;
+}
+
+/* Reset icon hover effect - increase opacity */
+.counter__reset-icon:hover {
+  opacity: 0.5;
+}
+/* Button container at bottom - dark background with flex layout */
+.counter__buttons {
+  background-color: #1d2507;
+  height: 116px;
+  width: 100%;
+  margin-top: auto;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+}
+
+/* Decrease button styling */
+.counter__button--decrease {
+}
+
+/* Increase button styling - left border separator */
+.counter__button--increase {
+  border-left: 1px solid rgba(189, 254, 0, 0.15);
+}
+
+/* Counter icons - lime green color with opacity */
+.counter__icon {
+  color: #bef227;
+  opacity: 0.9;
+  font-size: 40px;
+}
+
+/* Minus icon styling */
+.counter__icon--minus {
+}
+
+/* Plus icon styling */
+.counter__icon--plus {
+}
+
+/* Button styling - flex layout, smooth transitions on hover */
+.counter__button {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+/* Button hover effect - darker background */
+.counter__button:hover {
+  background-color: #212b06;
+}
+.inst {
+  background-color: rgba(144, 238, 144, 0.215);
+  color: #8cbd04;
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+.inst li {
+  list-style-type: none;
+}
